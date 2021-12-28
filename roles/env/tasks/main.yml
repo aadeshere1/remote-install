@@ -1,11 +1,9 @@
 - name: Create env file
-  become: yes
   file:
-    path: /etc/profile.d/varsremote.sh
+    path: /home/neekesh/test
     state: touch
-    mode: 0777
 
 - name: Add test
   lineinfile: >
-    dest='/etc/profile.d/vars.sh'
+    dest='/home/neekesh/test'
     line='export TEST=test'

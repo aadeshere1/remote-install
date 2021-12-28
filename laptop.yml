@@ -1,8 +1,8 @@
 - name: Playbook for setup linux laptop
   hosts: localhost
-  become: yes
   vars:
-    remote_role: app
+    remote_user: neekesh
+    ansible_user: neekesh
   vars_files:
     - vars/remote.yml
   roles:
