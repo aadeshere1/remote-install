@@ -1,0 +1,9 @@
+- name: Playbook for setup linux laptop
+  hosts: localhost
+  become: yes
+  vars:
+    remote_role: app
+  vars_files:
+    - vars/remote.yml
+  roles:
+    - env
